@@ -3,26 +3,11 @@ import os
 import re
 import requests
 import subprocess
-import sys
 import psutil
-from time import gmtime, strftime
-import uuid
 import wmi
-
-
-
-
-import datetime
-import winreg
-import os
 import platform
-import psutil
-import re
-import requests
-import subprocess
-import sys
 import uuid
-import wmi
+
 
 
 
