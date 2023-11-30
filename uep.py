@@ -9,10 +9,6 @@ import platform
 import uuid
 
 
-
-
-
-
 # Modified script from the original source: https://github.com/6nz/virustotal-vm-blacklist
 def getip_():
     ip = "None"
@@ -25,7 +21,6 @@ def get_guid_():
     try:
         reg_connection = winreg.ConnectRegistry(None, winreg.HKEY_LOCAL_MACHINE)
         key_value = winreg.OpenKey(reg_connection, r"SOFTWARE\Microsoft\Cryptography")
-        print("GUID: " + winreg.QueryValueEx(key_value, "MachineGuid")[0])
         return winreg.QueryValueEx(key_value, "MachineGuid")[0]
     except Exception as e:
         print(e)
@@ -34,7 +29,6 @@ def get_hwguid_():
         reg_connection = winreg.ConnectRegistry(None, winreg.HKEY_LOCAL_MACHINE)
         key_value = winreg.OpenKey(reg_connection,
                                    r"SYSTEM\CurrentControlSet\Control\IDConfigDB\Hardware Profiles\0001")
-        print("GUID: " + winreg.QueryValueEx(key_value, "HwProfileGuid")[0])
         return winreg.QueryValueEx(key_value, "HwProfileGuid")[0]
     except Exception as e:
         print(e)
