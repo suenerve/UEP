@@ -2,7 +2,7 @@
 ### Unwatned Execution Prevention.
 
 Including a full list of Virustotal machines and other commonly known debugging, tampering or sandboxing environments, and attempts to terminate itself once detected. By providing a variety of Functions that helps you to do so.
-> This script uses a modified source of popular open-source Functions.
+> This script uses a modified source of known open-source Functions.
 
 
 | Function | Description |
