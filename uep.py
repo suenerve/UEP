@@ -8,6 +8,7 @@ import wmi
 import platform
 import uuid
 
+
 # Modified script from the original source: https://github.com/6nz/virustotal-vm-blacklist
 def getip_():
     ip = "None"
